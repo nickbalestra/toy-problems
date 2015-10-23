@@ -1,5 +1,3 @@
-/*jshint expr:true*/
-
 /*
  * Bubble sort is the most basic sorting algorithm in all of Computer
  * Sciencedom. It works by starting at the first element of an array and
@@ -24,33 +22,29 @@
  * your algorithm changed?
 */
 
-/*
- * Example usage:
- * bubbleSort([2, 1, 3]); // yields [1, 2, 3]
- *
-*/
-
-// Introduce i into the global scope so we can test function efficiency
-var i;
-
-// Feel free to add helper functions if needed.
-
+// helper functions
 var swap = function(array, i, j) {
   var temp = array[i];
   array[i] = array[j];
   array[j] = temp;
   return array;
-}
+};
 
-var bitwiseSwap = function(array, i, j) {
-  array[i] ^= array[j];
-  array[j] ^= array[i];
-  array[i] ^= array[j];
-  return array;
-}
+// Alternative bitwise swap
+// var swap = function(array, i, j) {
+//   array[i] ^= array[j];
+//   array[j] ^= array[i];
+//   array[i] ^= array[j];
+//   return array;
+// }
 
-var bubbleSort = function(array) {
-  for (var i = 0, len = array.length; i < len - 1; i++ ){
+// test > bubbleSort
+// # bubbleSort([2,1,3]) === [1,2,3] (returns a sorted array)
+// # bubbleSort([6,7,4,3,10,1,2,4]) === [1,2,3,4,4,6,7,10] (returns a sorted array)
+//
+// Time complexity: O(n^2)
+exports.bubbleSort = function(array) {
+  for (var i = 0, len = array.length; i < len - 1; i++) {
     var swapped = false;
     for (var j = 0; j < len - 1 - i; j ++) {
       if (array[j] > array[j + 1]) {
@@ -64,5 +58,3 @@ var bubbleSort = function(array) {
   }
   return array;
 };
-
-console.log(bubbleSort([6, 7, 4, 3, 10, 1,2,4]))
