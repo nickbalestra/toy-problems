@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/nonrepeatedCharacter/nonrepeatedCharacter.js');
+var file = require('../src/various/nonrepeatedCharacter/nonrepeatedCharacter.js');
 
 test('firstNonRepeatedCharacter', function(t) { 
   t.plan(2);

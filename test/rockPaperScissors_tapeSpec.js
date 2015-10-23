@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/rockPaperScissors/rockPaperScissors.js');
+var file = require('../src/various/rockPaperScissors/rockPaperScissors.js');
 
 test('rockPaperScissors', function(t) { 
   t.plan(3);

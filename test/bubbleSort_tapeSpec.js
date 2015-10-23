@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/bubbleSort/bubbleSort.js');
+var file = require('../src/various/bubbleSort/bubbleSort.js');
 
 test('bubbleSort', function(t) { 
   t.plan(2);

@@ -1,2 +1,2 @@
 var test = require('tape');
-var file = require('../src/hr/isSubsetOf/isSubsetOf.js');
+var file = require('../src/various/isSubsetOf/isSubsetOf.js');

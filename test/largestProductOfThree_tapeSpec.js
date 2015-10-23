@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/largestProductOfThree/largestProductOfThree.js');
+var file = require('../src/various/largestProductOfThree/largestProductOfThree.js');
 
 test('largestProductOfThree', function(t) { 
   t.plan(1);

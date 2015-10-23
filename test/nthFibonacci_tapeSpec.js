@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/nthFibonacci/nthFibonacci.js');
+var file = require('../src/various/nthFibonacci/nthFibonacci.js');
 
 test('nthFibonacci', function(t) { 
   t.plan(3);

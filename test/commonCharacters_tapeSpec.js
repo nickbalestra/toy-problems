@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/hr/commonCharacters/commonCharacters.js');
+var file = require('../src/various/commonCharacters/commonCharacters.js');
 
 test('commonCharacters', function(t) { 
   t.plan(1);
