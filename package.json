@@ -1,0 +1,27 @@
+{
+  "name": "Toy-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickbalestra/toy-problems"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nickbalestra/toy-problems/issues"
+  },
+  "homepage": "https://github.com/nickbalestra/toy-problems#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-speckjs": "^1.0.1",
+    "grunt-tape": "0.0.2",
+    "tape": "^4.2.0"
+  }
+}
