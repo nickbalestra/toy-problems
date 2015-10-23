@@ -4,7 +4,7 @@
   "description": "",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-speckjs": "^1.0.1",
+    "gruntify-eslint": "^1.0.1",
     "grunt-tape": "0.0.2",
     "tape": "^4.2.0"
   }

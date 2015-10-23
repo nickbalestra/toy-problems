@@ -7,8 +7,8 @@ module.exports = function(grunt) {
     eslint: {
       src: [
         'Gruntfile.js',
-        './**/*.js',
-        '<%= tape.files %>'
+        './src/**/*.js'
+        // '<%= tape.files %>'
       ]
     },
 
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           logs: true
         },
         files: {
-          'test/': ['arrays-strings/*_t.js']
+          'test/': ['src/**/*.js']
         }
       }
     },
@@ -42,19 +42,19 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['arrays-strings/*_t.js'],
+        files: ['src/**/*.js'],
         tasks: ['build'],
         options: {
-          spawn: false,
-        },
-      },
-    },
+          spawn: false
+        }
+      }
+    }
   });
 
 
 
   // These plugins provide necessary tasks.
- // grunt.loadNpmTasks('gruntify-eslint');
+  grunt.loadNpmTasks('gruntify-eslint');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-tape');
   grunt.loadNpmTasks('grunt-speckjs');
