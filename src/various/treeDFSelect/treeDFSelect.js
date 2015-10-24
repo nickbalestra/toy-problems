@@ -35,9 +35,42 @@ var Tree = function(value) {
   this.children = [];
 };
 
-Tree.prototype.DFSelect = function(filter) {
-};
+// Alternative non recursive solution
+//
+// Tree.prototype.DFSelect = function(filter) {
+//   var stack = [];
+//   stack.push(this);
+//   var output = [];
+//
+//   while (stack.length) {
+//     node = stack.pop();
+//
+//     for (var i = node.children.length - 1; i >= 0; i--) {
+//       stack.push(node.children[i]);
+//     }
+//     console.log(node.value);
+//     if (filter(node.value)) {
+//       output.push(node.value);
+//     }
+//   }
+//   return output;
+// };
 
+Tree.prototype.DFSelect = function(filter) {
+  var output = [];
+
+  (function recurse(node, depth) {
+    if (filter(node.value, depth)) {
+      output.push(node.value);
+    }
+
+    for (var i = 0; i < node.children.length; i++) {
+      recurse(node.children[i], depth+1);
+    }
+  }(this, 0));
+
+  return output;
+};
 
 
 /**
@@ -93,3 +126,5 @@ Tree.prototype.removeChild = function(child) {
     throw new Error('That node is not an immediate child of this tree');
   }
 };
+
+
