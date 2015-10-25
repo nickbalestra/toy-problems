@@ -5,9 +5,9 @@
 
 
 // test > 1.2a determine if a string is a permutation of the other
-// # checkPermutation('nick', 'ickn') == true
-// # checkPermutation('nice', 'nici') == false
-// # checkPermutation('nice', 'nic') == false
+// # checkPermutation('nick', 'ickn') == true (nick should be a permutation of ickn)
+// # checkPermutation('nice', 'nici') == false (nice shouldnt be permutation of nici)
+// # checkPermutation('nice', 'nic') == false (nice shouldnt be permutation of nic)
 //
 // O(sort + split + join) - O(n)
 exports.checkPermutation = function(str1, str2) {
@@ -18,9 +18,9 @@ exports.checkPermutation = function(str1, str2) {
 };
 
 // test > 1.2b determine if a string is a permutation of the other in O(n)
-// # checkPermutation2('nick', 'ickn') == true
-// # checkPermutation2('nice', 'nici') == false
-// # checkPermutation2('nice', 'nic') == false
+// # checkPermutation2('nick', 'ickn') == true (nick should be a permutation of ickn)
+// # checkPermutation2('nice', 'nici') == false (nice shouldnt be permutation of nici)
+// # checkPermutation2('nice', 'nic') == false (nice shouldnt be permutation of nic)
 //
 // O(n)
 exports.checkPermutation2 = function(str1, str2) {
