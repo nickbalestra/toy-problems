@@ -11,10 +11,10 @@
 // # oneAway('pales', 'pale') == true
 // # oneAway('pale', 'bale') == true
 // # oneAway('pale', 'bake') == false
-exports.oneAway = oneAway = function(str1, str2) {
+exports.oneAway = function(str1, str2) {
   var len1 = str1.length,
-      len2 = str2.length,
-      shorter = (len1 > len2) ? len2 : len1;
+    len2 = str2.length,
+    shorter = (len1 > len2) ? len2 : len1;
 
   if (Math.abs(len1 - len2) === 0 || Math.abs(len1 - len2) === 1) {
 
@@ -23,16 +23,16 @@ exports.oneAway = oneAway = function(str1, str2) {
 
         // Replace edit
         if (len1 === len2) {
-          return (i === len1 -1 ) ?
+          return (i === len1 -1) ?
             true :
             str1.slice(i+1) === str2.slice(i+1);
         }
         // Add or Remove edit
-        return (len1 > len2 ) ?
+        return (len1 > len2) ?
           str1.slice(i+1) === str2.slice(i) :
           str1.slice(i) === str2.slice(i+1);
       }
-    };
+    }
     return true;
   }
   return false;
