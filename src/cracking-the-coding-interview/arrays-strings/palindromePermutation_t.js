@@ -5,7 +5,7 @@
  */
 
 // test > 1.4 check if string is a permutation of a palindrome
-// # isPermutationsOfPalindrome('Tact Coa') == true
+// # isPermutationsOfPalindrome('Tact Coa') == true (Tact Coa is a permutation of a palindrome)
 //
 // Assumptions:
 // space doesn't count
