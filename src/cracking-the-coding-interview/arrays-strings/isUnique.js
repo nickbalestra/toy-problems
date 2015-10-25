@@ -10,9 +10,9 @@ exports.isUnique = function(str) {
   var charHash = {};
 
   return str.split('').reduce(function(prev, current) {
-    if (prev && charHash[current] === undefined) {
-      charHash[current] = current;
-      return true;
+    if (prev && !charHash[current]) {
+      charHash[current] = true;
+      return prev;
     }
     return false;
   }, true);
