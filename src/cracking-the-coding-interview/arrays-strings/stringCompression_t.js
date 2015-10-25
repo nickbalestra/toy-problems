@@ -7,8 +7,8 @@
  */
 
 // test > 1.6 perform basic string compression with repeated characters counts.
-// # stringCompression('aabcccccaaa') == 'a2b1c5a3'
-// # stringCompression('nick') == 'nick'
+// # stringCompression('aabcccccaaa') == 'a2b1c5a3' (if worth should return a compressed string)
+// # stringCompression('nick') == 'nick' (if not worth should retur the original string)
 exports.stringCompression = function(str) {
   var count = 0;
   var prev = '';
