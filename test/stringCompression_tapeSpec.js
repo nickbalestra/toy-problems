@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/cracking-the-coding-interview/arrays-strings/stringCompression_t.js');
+var file = require('../src/cracking-the-coding-interview/arrays-strings/stringCompression.js');
 
 test('1.6 perform basic string compression with repeated characters counts.', function(t) { 
   t.plan(2);

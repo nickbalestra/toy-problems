@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/cracking-the-coding-interview/arrays-strings/isUnique_t.js');
+var file = require('../src/cracking-the-coding-interview/arrays-strings/isUnique.js');
 
 test('1.1 determine if a string has all unique characters', function(t) { 
   t.plan(2);

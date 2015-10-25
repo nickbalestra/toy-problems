@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/cracking-the-coding-interview/arrays-strings/oneAway_t.js');
+var file = require('../src/cracking-the-coding-interview/arrays-strings/oneAway.js');
 
 test('1.5 check if strings are one edit or 0 away.', function(t) { 
   t.plan(4);

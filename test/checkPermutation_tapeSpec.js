@@ -1,5 +1,5 @@
 var test = require('tape');
-var file = require('../src/cracking-the-coding-interview/arrays-strings/checkPermutation_t.js');
+var file = require('../src/cracking-the-coding-interview/arrays-strings/checkPermutation.js');
 
 test('1.2a determine if a string is a permutation of the other', function(t) { 
   t.plan(3);
