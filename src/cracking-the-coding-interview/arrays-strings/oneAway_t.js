@@ -7,10 +7,10 @@
 
 
 // test > 1.5 check if strings are one edit or 0 away.
-// # oneAway('pale', 'ple') == true
-// # oneAway('pales', 'pale') == true
-// # oneAway('pale', 'bale') == true
-// # oneAway('pale', 'bake') == false
+// # oneAway('pale', 'ple') == true (ple is one edit away from pale)
+// # oneAway('pales', 'pale') == true (pales is one edit away from pale)
+// # oneAway('pale', 'bale') == true (pale is one edit away from bale)
+// # oneAway('pale', 'bake') == false (ple is not one edit away from bake)
 exports.oneAway = function(str1, str2) {
   var len1 = str1.length,
     len2 = str2.length,
