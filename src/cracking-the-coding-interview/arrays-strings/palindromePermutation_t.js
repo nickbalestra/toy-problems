@@ -10,11 +10,11 @@
 // Assumptions:
 // space doesn't count
 // Caseinsentitive
-exports.isPermutationsOfPalindrome = isPermutationsOfPalindrome = function(str) {
+exports.isPermutationsOfPalindrome = function(str) {
   var charHash = {},
-      length = str.length;
+    length = str.length;
 
-  var singleChars = str.toLowerCase().split('').reduce(function(count, char){
+  var singleChars = str.toLowerCase().split('').reduce(function(count, char) {
     if (char === ' ') {
       length--;
       return count;
