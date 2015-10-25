@@ -9,11 +9,11 @@
 // test > 1.6 perform basic string compression with repeated characters counts.
 // # stringCompression('aabcccccaaa') == 'a2b1c5a3'
 // # stringCompression('nick') == 'nick'
-exports.stringCompression = stringCompression = function(str) {
+exports.stringCompression = function(str) {
   var count = 0;
   var prev = '';
 
-  var compressed = str.split('').reduce(function(newStr, char){
+  var compressed = str.split('').reduce(function(newStr, char) {
     if (prev === char) {
       prev = char;
       count++;
@@ -23,8 +23,8 @@ exports.stringCompression = stringCompression = function(str) {
       count = 1;
       newStr = newStr + char + count;
     }
-    return newStr
-  }, '')
+    return newStr;
+  }, '');
 
   return (str.length < compressed.length) ? str : compressed;
-}
+};
