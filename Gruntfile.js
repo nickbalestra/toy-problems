@@ -7,7 +7,8 @@ module.exports = function(grunt) {
     eslint: {
       src: [
         'Gruntfile.js',
-        './src/**/*.js'
+        './src/**/*.js',
+        '!./src/various/htmljQueryColor/**/*.js'
         // '<%= tape.files %>'
       ]
     },
@@ -26,7 +27,7 @@ module.exports = function(grunt) {
           logs: true
         },
         files: {
-          'test/': ['src/**/*.js']
+          'test/': ['src/**/*.js', '!src/various/htmljQueryColor/**/*.js']
         }
       }
     },
