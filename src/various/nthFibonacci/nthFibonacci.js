@@ -31,4 +31,3 @@ exports.nthFibonacci = function (n, a, b) {
 
 // ES5 Solution
 // var nfib = (n, a = 0, b = 1) => (n === 0) ? a : nfib(n-1, b, a + b);
-
