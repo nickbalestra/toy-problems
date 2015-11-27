@@ -7,7 +7,7 @@
  * https://codility.com/programmers/task/tape_equilibrium
  */
 
-// test > commonCharacters
+// test > tapeEquilibrium
 // # tapeEquilibrium([3,1,2,4,3]) === 1 (example test)
 // # tapeEquilibrium([ -1000, 1000 ]) === 2000 (two elements)
 // # tapeEquilibrium([ 1, 1 ]) === 0 (two elements)
