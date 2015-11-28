@@ -9,7 +9,7 @@
 // test > permCheck
 // # permCheck([ 4, 1, 3, 2 ]) == 1 (first example test)
 // # permCheck([ 4, 1, 3 ]) == 0 ( second example test)
-// # permCheck([ 1000000000 ]) === 0 (single element with maximal value)
+// # permCheck([ 1000000000 ]) == 0 (single element with maximal value)
 // # permCheck([ 1 ]) == 1 (single element with minimal value)
 // # permCheck([ 2 ]) == 0 (single element)
 // # permCheck([ 1, 2 ]) == 1 (two elements)
