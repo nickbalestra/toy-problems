@@ -5,7 +5,7 @@ test('permCheck', function(t) {
   t.plan(13);
   t.equal(1, file.permCheck([ 4, 1, 3, 2 ]), 'first example test');
   t.equal(0, file.permCheck([ 4, 1, 3 ]), ' second example test');
-  t.deepEqual(0, file.permCheck([ 1000000000 ]), 'single element with maximal value');
+  t.equal(0, file.permCheck([ 1000000000 ]), 'single element with maximal value');
   t.equal(1, file.permCheck([ 1 ]), 'single element with minimal value');
   t.equal(0, file.permCheck([ 2 ]), 'single element');
   t.equal(1, file.permCheck([ 1, 2 ]), 'two elements');
