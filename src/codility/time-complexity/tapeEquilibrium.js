@@ -14,7 +14,7 @@
 // # tapeEquilibrium([ 5, 6, 2, 4, 1 ]) === 4 (simple test with positive numbers, length = 5)
 // # tapeEquilibrium([ -10, -5, -3, -4, -5 ]) === 3 (simple test with negative numbers, length = 5)
 //
-// Time complexity: O(n)
+// Worst Time Allowed: O(n)
 exports.tapeEquilibrium = function(A) {
 
   var sum = A.reduce(function(prev, curr) {

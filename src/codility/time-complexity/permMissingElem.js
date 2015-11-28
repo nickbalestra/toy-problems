@@ -22,7 +22,7 @@
 // # permMissingElem([3, 2]) === 1 (two elements)
 // # permMissingElem([ 4, 2, 3, 5, 1, 6, 8, 9 ]) === 7 (simple test)
 //
-// Time complexity: O(n)
+// Worst Time Allowed: O(n)
 exports.permMissingElem = function(A) {
   var actualSum = 0;
   var expectedSum = 0;

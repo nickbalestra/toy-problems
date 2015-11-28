@@ -17,7 +17,7 @@
 // # frogJmp(1000000000, 1000000000, 1) === 0 (no jump needed)
 // # frogJmp(1999999999, 1000000000, 1000000000) === 0 (one big jump)
 //
-// Time complexity: O(1)
+// Worst Time Allowed: O(1)
 exports.frogJmp = function(X, Y, D) {
   return Math.ceil((Y - X) / D);
 };
