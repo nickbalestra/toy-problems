@@ -8,11 +8,11 @@
  */
 
 // test > tapeEquilibrium
-// # tapeEquilibrium([3,1,2,4,3]) === 1 (example test)
-// # tapeEquilibrium([ -1000, 1000 ]) === 2000 (two elements)
-// # tapeEquilibrium([ 1, 1 ]) === 0 (two elements)
-// # tapeEquilibrium([ 5, 6, 2, 4, 1 ]) === 4 (simple test with positive numbers, length = 5)
-// # tapeEquilibrium([ -10, -5, -3, -4, -5 ]) === 3 (simple test with negative numbers, length = 5)
+// # tapeEquilibrium([3,1,2,4,3]) == 1 (example test)
+// # tapeEquilibrium([ -1000, 1000 ]) == 2000 (two elements)
+// # tapeEquilibrium([ 1, 1 ]) == 0 (two elements)
+// # tapeEquilibrium([ 5, 6, 2, 4, 1 ]) == 4 (simple test with positive numbers, length = 5)
+// # tapeEquilibrium([ -10, -5, -3, -4, -5 ]) == 3 (simple test with negative numbers, length = 5)
 //
 // Worst Time Allowed: O(n)
 exports.tapeEquilibrium = function(A) {

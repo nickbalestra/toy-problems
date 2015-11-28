@@ -11,7 +11,7 @@
  */
 
 // test > commonCharacters
-// # commonCharacters('acexivou', 'aegihobu') === 'aeiou' (returns chars found in both strings)
+// # commonCharacters('acexivou', 'aegihobu') == 'aeiou' (returns chars found in both strings)
 //
 // Time complexity: O(n)
 exports.commonCharacters = function(string1, string2) {

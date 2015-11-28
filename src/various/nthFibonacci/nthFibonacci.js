@@ -18,9 +18,9 @@
 // http://nick.balestra.ch/2015/recursion-workshop/
 
 // test > nthFibonacci
-// # nthFibonacci(2) === 1 (returns the nth Fibonacci number)
-// # nthFibonacci(3) === 2 (returns the nth Fibonacci number)
-// # nthFibonacci(5) === 5 (returns the nth Fibonacci number)
+// # nthFibonacci(2) == 1 (returns the nth Fibonacci number)
+// # nthFibonacci(3) == 2 (returns the nth Fibonacci number)
+// # nthFibonacci(5) == 5 (returns the nth Fibonacci number)
 //
 // Time complexity: O(n)
 exports.nthFibonacci = function (n, a, b) {

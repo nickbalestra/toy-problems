@@ -10,12 +10,12 @@
  */
 
 // test > frogJmp
-// # frogJmp(10, 85, 30) === 3 (example test)
-// # frogJmp(5, 105, 3) === 34 (two elements)
-// # frogJmp(2, 11, 3) === 3 (two elements)
-// # frogJmp(1, 1, 3) === 0 (no jump needed)
-// # frogJmp(1000000000, 1000000000, 1) === 0 (no jump needed)
-// # frogJmp(1999999999, 1000000000, 1000000000) === 0 (one big jump)
+// # frogJmp(10, 85, 30) == 3 (example test)
+// # frogJmp(5, 105, 3) == 34 (two elements)
+// # frogJmp(2, 11, 3) == 3 (two elements)
+// # frogJmp(1, 1, 3) == 0 (no jump needed)
+// # frogJmp(1000000000, 1000000000, 1) == 0 (no jump needed)
+// # frogJmp(1999999999, 1000000000, 1000000000) == 0 (one big jump)
 //
 // Worst Time Allowed: O(1)
 exports.frogJmp = function(X, Y, D) {

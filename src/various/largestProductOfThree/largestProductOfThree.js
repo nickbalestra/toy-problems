@@ -2,13 +2,13 @@
  * from an array.
  *
  * Example:
- * largestProductOfThree([-2, -1, 3, 7]) === 42
+ * largestProductOfThree([-2, -1, 3, 7]) == 42
  *
  * Extra credit: Make your function handle negative numbers.
  */
 
 // test > largestProductOfThree
-// # largestProductOfThree([2,1,3,7]) === 42 (largest possible product of any 3 numbers)
+// # largestProductOfThree([2,1,3,7]) == 42 (largest possible product of any 3 numbers)
 //
 // Time complexity: O(n), dependin on Array.sort method
 exports.largestProductOfThree = function(array) {

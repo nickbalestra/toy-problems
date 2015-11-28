@@ -18,9 +18,9 @@
 */
 
 // test > rockPaperScissors
-// # rockPaperScissors().length === 27 (returns every sequence of throws, default rounds)
-// # rockPaperScissors(3).length === 27 (returns every sequence of throws, 3 rounds)
-// # rockPaperScissors(5).length === 243 (returns every sequence of throws, 3 rounds)
+// # rockPaperScissors().length == 27 (returns every sequence of throws, default rounds)
+// # rockPaperScissors(3).length == 27 (returns every sequence of throws, 3 rounds)
+// # rockPaperScissors(5).length == 243 (returns every sequence of throws, 3 rounds)
 //
 // Time complexity: O(n)
 exports.rockPaperScissors = function(rounds) {

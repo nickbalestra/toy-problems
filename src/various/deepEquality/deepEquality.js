@@ -13,8 +13,8 @@
   */
 
 // test > deepEquals
-// # deepEquals({a:1, b: {c:3}},{a:1, b: {c:3}}) === true (check object deep equality)
-// # deepEquals({a:1, b: {c:5}},{a:1, b: {c:6}}) === false (check object deep equality)
+// # deepEquals({a:1, b: {c:3}},{a:1, b: {c:3}}) == true (check object deep equality)
+// # deepEquals({a:1, b: {c:5}},{a:1, b: {c:6}}) == false (check object deep equality)
 exports.deepEquals = function(apple, orange) {
   if (apple === orange) {
     return true;

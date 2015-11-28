@@ -10,17 +10,17 @@
  */
 
 // test > permMissingElem
-// # permMissingElem([2, 3, 1, 5]) === 4 (example test)
-// # permMissingElem([]) === 1 (empty list)
-// # permMissingElem([1]) === 2 (single element)
-// # permMissingElem([ 1, 2, 3, 4, 5 ]) === 6 (first element is missing)
-// # permMissingElem([ 2, 3, 4, 5, 6 ]) === 1 (last element is missing)
-// # permMissingElem([1]) === 2 (single element)
-// # permMissingElem([2]) === 1 (single element)
-// # permMissingElem([1, 2]) === 3 (two elements)
-// # permMissingElem([3, 1]) === 2 (two elements)
-// # permMissingElem([3, 2]) === 1 (two elements)
-// # permMissingElem([ 4, 2, 3, 5, 1, 6, 8, 9 ]) === 7 (simple test)
+// # permMissingElem([2, 3, 1, 5]) == 4 (example test)
+// # permMissingElem([]) == 1 (empty list)
+// # permMissingElem([1]) == 2 (single element)
+// # permMissingElem([ 1, 2, 3, 4, 5 ]) == 6 (first element is missing)
+// # permMissingElem([ 2, 3, 4, 5, 6 ]) == 1 (last element is missing)
+// # permMissingElem([1]) == 2 (single element)
+// # permMissingElem([2]) == 1 (single element)
+// # permMissingElem([1, 2]) == 3 (two elements)
+// # permMissingElem([3, 1]) == 2 (two elements)
+// # permMissingElem([3, 2]) == 1 (two elements)
+// # permMissingElem([ 4, 2, 3, 5, 1, 6, 8, 9 ]) == 7 (simple test)
 //
 // Worst Time Allowed: O(n)
 exports.permMissingElem = function(A) {

@@ -3,5 +3,5 @@ var file = require('../src/various/largestProductOfThree/largestProductOfThree.j
 
 test('largestProductOfThree', function(t) { 
   t.plan(1);
-  t.deepEqual(42, file.largestProductOfThree([2,1,3,7]), 'largest possible product of any 3 numbers');
+  t.equal(42, file.largestProductOfThree([2,1,3,7]), 'largest possible product of any 3 numbers');
 });
