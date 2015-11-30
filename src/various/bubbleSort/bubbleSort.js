@@ -24,10 +24,7 @@
 
 // helper functions
 var swap = function(array, i, j) {
-  var temp = array[i];
-  array[i] = array[j];
-  array[j] = temp;
-  return array;
+  array[i] = array[j] + (array[j] = array[i]) - array[i];
 };
 
 // Alternative bitwise swap
@@ -44,11 +41,11 @@ var swap = function(array, i, j) {
 //
 // Time complexity: O(n^2)
 exports.bubbleSort = function(array) {
-  for (var i = 0, len = array.length; i < len - 1; i++) {
+  for (var i = 0; i < array.length; i++) {
     var swapped = false;
-    for (var j = 0; j < len - 1 - i; j ++) {
-      if (array[j] > array[j + 1]) {
-        swap(array,j, j + 1);
+    for (var j = 1; j < array.length - i; j++) {
+      if (array[j-1] > array[j]) {
+        swap(array, j-1, j);
         swapped = true;
       }
     }
