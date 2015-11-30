@@ -15,17 +15,36 @@
 //
 // Time complexity: O(n)
 exports.commonCharacters = function(string1, string2) {
-  var chars = {};
 
-  string2.split('').forEach(function(letter) {
-    chars[letter] = true;
-  });
+  function objectify(string) {
+    return string.split('').reduce(function(obj, char) {
+      if (char.match(/[a-z]/i)) {
+        obj[char] = true;
+      }
+      return obj;
+    }, {});
+  }
+
+  function interesect(obj1, obj2) {
+    return Object.keys(obj1).reduce(function(shared, char) {
+      if (char in obj2) {
+        shared[char] = true;
+      }
+      return shared;
+    }, {});
+  }
+
+  var otherStrings = Array.prototype.slice.call(arguments, 1);
+
+  var sharedAmongAllStrings = otherStrings.reduce(function(common, string) {
+    return interesect(common, objectify(string));
+  }, objectify(string1));
 
   return string1.split('').reduce(function(common, char) {
-    if (chars[char]) {
+    if (sharedAmongAllStrings[char]) {
+      sharedAmongAllStrings[char] = false;
       common += char;
     }
     return common;
   }, '');
-
 };
