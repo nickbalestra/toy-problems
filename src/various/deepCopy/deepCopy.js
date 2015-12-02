@@ -15,7 +15,7 @@ exports.deepCopy = function(obj) {
   var keys = Object.keys(obj);
   for (var i = 0; i < keys.length; i++) {
     var key = keys[i];
-    if (typeof obj[key] === 'string' || typeof obj[key] === 'number' || typeof obj[key] === 'boolean' || obj[key] === undefined || obj[key] === null) {
+    if (obj[key] === undefined || obj[key] === null || typeof obj[key] !== 'object') {
       copy[key] = obj[key];
     } else {
       copy[key] = exports.deepCopy(obj[key]);
