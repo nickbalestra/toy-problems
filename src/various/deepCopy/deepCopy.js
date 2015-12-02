@@ -9,9 +9,7 @@
 // # deepCopy({a:1, b: 2}) === {a:1,b:2} (return deep copy)
 // # deepCopy({a:1, b: {b:2, c:3}}) === {a:1,b:{b:2,c:3}} (return deep copy with nested objects)
 // # deepCopy({a:1, b: {b:2, c:3}, d: null, e: [1,2,3, [3, ,5]]}) === {a:1,b:{b:2,c:3},d:null,e:[1,2,3,[3,,5]]} (return deep copy with holes arrays)
-
 exports.deepCopy = function(obj) {
-
   var copy = Array.isArray(obj) ? [] : {};
 
   var keys = Object.keys(obj);
