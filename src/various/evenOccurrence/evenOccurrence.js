@@ -2,11 +2,6 @@
 // Remember to handle multiple even-occurrence items and return the first one.
 // Return null if there are no even-occurrence items.
 
-
-// [ 1, 3, 3, 3, 2, 4, 4, 2, 5 ] = 2
-
-// [ "cat", "dog", "dig", "cat" ] = "cat"
-
 // test > evenOccurence
 // # evenOccurence([ 1, 3, 3, 3, 2, 4, 4, 2, 5 ]) == 2 (Find the first item that occurs an even number)
 // # evenOccurence([ "cat", "dog", "dig", "cat" ]) == "cat" (Find the first item that occurs an even number)
