@@ -2,8 +2,8 @@
 // It will ensure that we don't accidentally try to use up too much space.
 
 // test > LimitedArray
-// # test.set('3', 'hi') == true (insert an alement to the array)
-// # test.get('3') == 'hi' (retrive an alement from the array)
+// # test.set(3, 'hi') == true (insert an alement to the array)
+// # test.get(3) == 'hi' (retrive an alement from the array)
 exports.LimitedArray = function(limit) {
   var _storage = [];
 
@@ -26,6 +26,9 @@ exports.LimitedArray = function(limit) {
   this.checkLimit = function(index) {
     if (limit <= index) {
       throw new Error('Trying to access an oversized Array');
+    }
+    if (typeof index !== 'number') {
+      throw new Error('Setter need a numeric index as argument');
     }
   };
 };
