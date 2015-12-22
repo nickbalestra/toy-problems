@@ -1,7 +1,6 @@
 var StringBuilder = function(value) {
   this._strings = [];
-  value = value || '';
-  this._strings[0] = value;
+  this._strings[0] = value || '';
 };
 
 StringBuilder.prototype.append = function(value) {
