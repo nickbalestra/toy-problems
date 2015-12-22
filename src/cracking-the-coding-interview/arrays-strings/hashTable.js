@@ -58,3 +58,4 @@ function getIndexBelowMaxForKey(str, max) {
   }
   return hash % max;
 }
+
