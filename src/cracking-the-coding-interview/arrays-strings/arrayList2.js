@@ -6,7 +6,6 @@ var ArrayList = function() {
   var _limit = 10;
   var _storage = new Array(_limit);
 
-
   this.push = function(value) {
     if (_size > _limit * .75) {
       this.resize(_limit * 2);
@@ -15,7 +14,7 @@ var ArrayList = function() {
   };
 
   this.pop = function() {
-    if (_size > 0 && _size < _limit * .25) {
+    if (_size < _limit * .25) {
       this.resize(_limit / 2);
     }
     if (_size > 0) {
@@ -25,21 +24,17 @@ var ArrayList = function() {
 
   this.resize = function(newLimit) {
     var oldStorage = _storage;
-    _storage = new Array(newLimit);
-    _limit = newLimit;
+    _limit = Math.floor(newLimit);
+    _storage = new Array(_limit);
 
     oldStorage.forEach(function(el, i) {
       if (i < _size) {
-        _storage[i] = el;
+        _storage.push(el);
       }
     });
   };
 
   this.length = function() {
-    console.log(_storage.length)
     return _size;
   };
 };
-
-
-
