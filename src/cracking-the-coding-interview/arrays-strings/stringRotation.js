@@ -6,18 +6,7 @@
  */
 
 // Helper
-function isSubstring(str1, str2) {
-  for (var i = 0; i < str1.length; i++) {
-    if (str1.charAt(i) === str2.charAt(0)) {
-      if (str1.length - i < str2.length) {
-        return false;
-      } else {
-        return str1.slice(i, i + str2.length) === str2;
-      }
-    }
-  }
-  return false;
-}
+var isSubstring = require('./isSubstring').isSubstring;
 
 // test > 1.9 stringRotation.
 // # stringRotation('waterbottle','erbottlewat') == true (check if s2 is a rotation of s1)
