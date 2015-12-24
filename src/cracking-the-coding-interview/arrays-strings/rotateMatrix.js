@@ -66,7 +66,7 @@ function flipHorizontal(matrix) {
   return output;
 }
 
-// test > 1.6 rotateMatrix
+// test > 1.7 rotateMatrix
 // # rotateMatrix(file.matrix) === [[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]] (rotate 90 degree cw the matrix as default)
 // # rotateMatrix(file.matrix, 90) === [[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]] (rotate 90 degree cw the matrix)
 // # rotateMatrix(file.matrix, -90) === [[4,8,12,16],[3,7,11,15],[2,6,10,14],[1,5,9,13]] (rotate 90 degree ccw the matrix)
@@ -139,7 +139,7 @@ function flipHorizontalInPlace(matrix) {
   return matrix;
 }
 
-// test > 1.6b rotateMatrixInPlace
+// test > 1.7b rotateMatrixInPlace
 // # rotateMatrixInPlace(file.matrix) === [[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]] (rotate 90 degree cw the matrix as default)
 // # rotateMatrixInPlace(file.matrix, 90) === [[16,15,14,13],[12,11,10,9],[8,7,6,5],[4,3,2,1]] (rotate 90 degree cw the matrix)
 // # rotateMatrixInPlace(file.matrix, -90) === [[13,9,5,1],[14,10,6,2],[15,11,7,3],[16,12,8,4]] (rotate 90 degree ccw the matrix)
